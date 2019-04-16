@@ -202,14 +202,14 @@ def big_shoe_rebounds
       end
    end
    rebound
-end 
+end
 
 def home_slam_dunks
   slam_dunks=0
   game_hash.each do |home,b|
     b [:players].each do |player_name, value|
       value [:slam_dunks] = value[:slam_dunks] + 1
-      
+
     end
   end
 end
